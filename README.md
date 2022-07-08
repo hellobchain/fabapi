@@ -1,3 +1,5 @@
+# fabapi
+基于go语言的fabric sdk API server  支持2.X
 # 编译
 ````
 # 镜像编译
@@ -26,4 +28,3 @@ sh deployments/docker/stop.sh
 # 二进制文件运行
 sh ./fab-server 
 ````
-
