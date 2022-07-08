@@ -1,0 +1,1608 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "描述:fabapi 接口文档.",
+        "title": "fabapi API文档",
+        "contact": {},
+        "license": {},
+        "version": "1.1.0"
+    },
+    "host": "localhost:6922",
+    "basePath": "/fab",
+    "paths": {
+        "/chaincode/approvecc": {
+            "post": {
+                "description": "功能：批准链码管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "批准链码管理"
+                ],
+                "summary": "批准链码管理",
+                "parameters": [
+                    {
+                        "description": "批准链码管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/chaincode.approveChaincodeRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/chaincode/commitcc": {
+            "post": {
+                "description": "功能：提交链码管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "提交链码管理"
+                ],
+                "summary": "提交链码管理",
+                "parameters": [
+                    {
+                        "description": "提交链码管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/chaincode.commitChaincodeRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/chaincode/initcc": {
+            "post": {
+                "description": "功能：初始化链码管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "初始化链码管理"
+                ],
+                "summary": "初始化链码管理",
+                "parameters": [
+                    {
+                        "description": "初始化链码管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/chaincode.initChaincodeRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/chaincode/installcc": {
+            "post": {
+                "description": "功能：安装链码管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "安装链码管理"
+                ],
+                "summary": "安装链码管理",
+                "parameters": [
+                    {
+                        "description": "安装链码管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/chaincode.installChaincodeRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/chaincode/invokecc": {
+            "post": {
+                "description": "功能：invoke链码管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "invoke链码管理"
+                ],
+                "summary": "invoke链码管理",
+                "parameters": [
+                    {
+                        "description": "invoke链码管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/chaincode.invokeChaincodeRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/chaincode/packagecc": {
+            "post": {
+                "description": "功能：打包链码管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "打包链码管理"
+                ],
+                "summary": "打包链码管理",
+                "parameters": [
+                    {
+                        "description": "打包链码管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/chaincode.packageChaincodeRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/chaincode/querycc": {
+            "post": {
+                "description": "功能：query链码管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "query链码管理"
+                ],
+                "summary": "query链码管理",
+                "parameters": [
+                    {
+                        "description": "query链码管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/chaincode.queryChaincodeRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/chaincode/upgradecc": {
+            "post": {
+                "description": "功能：升级链码管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "升级链码管理"
+                ],
+                "summary": "升级链码管理",
+                "parameters": [
+                    {
+                        "description": "升级链码管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/chaincode.upgradeChaincodeRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/channel/createchannel": {
+            "post": {
+                "description": "功能：创建通道管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "创建通道管理"
+                ],
+                "summary": "创建通道管理",
+                "parameters": [
+                    {
+                        "description": "创建通道管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/channel.createChannelRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/channel/joinchannel": {
+            "post": {
+                "description": "功能：加入通道管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "加入通道管理"
+                ],
+                "summary": "加入通道管理",
+                "parameters": [
+                    {
+                        "description": "加入通道管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/channel.joinChannelRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/ledger/queryblock": {
+            "post": {
+                "description": "功能：查询块管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "查询块管理"
+                ],
+                "summary": "查询块管理",
+                "parameters": [
+                    {
+                        "description": "查询块管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/ledger.queryBlockRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/ledger/queryblockbyhash": {
+            "post": {
+                "description": "功能：通过哈希查询块管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "通过哈希查询块管理"
+                ],
+                "summary": "通过哈希查询块管理",
+                "parameters": [
+                    {
+                        "description": "通过哈希查询块管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/ledger.queryBlockByHashRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/ledger/queryblockbytxid": {
+            "post": {
+                "description": "功能：通过交易id查询块管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "通过交易id查询块管理"
+                ],
+                "summary": "通过交易id查询块管理",
+                "parameters": [
+                    {
+                        "description": "通过交易id查询块管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/ledger.queryBlockByTxIdRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/ledger/queryblocknum": {
+            "post": {
+                "description": "功能：查询块高管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "查询块高"
+                ],
+                "summary": "查询块高管理",
+                "parameters": [
+                    {
+                        "description": "查询块高管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/ledger.queryBlockNumRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/ledger/queryconfig": {
+            "post": {
+                "description": "功能：查询配置块管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "查询配置块管理"
+                ],
+                "summary": "查询配置块管理",
+                "parameters": [
+                    {
+                        "description": "查询配置块管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/ledger.queryConfigRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/ledger/queryledger": {
+            "post": {
+                "description": "功能：查询账本管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "查询账本管理"
+                ],
+                "summary": "查询账本管理",
+                "parameters": [
+                    {
+                        "description": "查询账本管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/ledger.queryLedgerRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/ledger/querytx": {
+            "post": {
+                "description": "功能：查询交易管理",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "查询交易管理"
+                ],
+                "summary": "查询交易管理",
+                "parameters": [
+                    {
+                        "description": "查询交易管理",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/ledger.queryTxRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/log/setloglevel": {
+            "post": {
+                "description": "功能：设置日志级别",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "设置日志级别"
+                ],
+                "summary": "设置日志级别",
+                "parameters": [
+                    {
+                        "description": "设置日志级别",
+                        "name": "resource",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/log.setLogLevelRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/gintool.ApiResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "chaincode.approveChaincodeRequest": {
+            "type": "object",
+            "required": [
+                "chaincodeid",
+                "chaincodeversion",
+                "channelid",
+                "orgmsps",
+                "orgnames",
+                "packageid",
+                "sequence"
+            ],
+            "properties": {
+                "chaincodeid": {
+                    "type": "string",
+                    "example": "test"
+                },
+                "chaincodepolicy": {
+                    "type": "string"
+                },
+                "chaincodeversion": {
+                    "type": "string",
+                    "example": "v1.0"
+                },
+                "channelid": {
+                    "type": "string",
+                    "example": "mychanel"
+                },
+                "isinit": {
+                    "type": "boolean"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                },
+                "packageid": {
+                    "type": "string"
+                },
+                "sequence": {
+                    "type": "integer",
+                    "example": 1
+                }
+            }
+        },
+        "chaincode.commitChaincodeRequest": {
+            "type": "object",
+            "required": [
+                "chaincodeid",
+                "chaincodeversion",
+                "channelid",
+                "orgmsps",
+                "orgnames",
+                "packageid",
+                "sequence"
+            ],
+            "properties": {
+                "chaincodeid": {
+                    "type": "string",
+                    "example": "test"
+                },
+                "chaincodepolicy": {
+                    "type": "string"
+                },
+                "chaincodeversion": {
+                    "type": "string",
+                    "example": "v1.0"
+                },
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "isinit": {
+                    "type": "boolean"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                },
+                "packageid": {
+                    "type": "string"
+                },
+                "sequence": {
+                    "type": "integer",
+                    "example": 1
+                }
+            }
+        },
+        "chaincode.initChaincodeRequest": {
+            "type": "object",
+            "required": [
+                "chaincodeid",
+                "channelid",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "args": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "save",
+                        "a",
+                        "b"
+                    ]
+                },
+                "chaincodeid": {
+                    "type": "string",
+                    "example": "test"
+                },
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "chaincode.installChaincodeRequest": {
+            "type": "object",
+            "required": [
+                "chaincodeid",
+                "chaincodeversion",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "ccpack": {
+                    "type": "object",
+                    "required": [
+                        "ccpack"
+                    ]
+                },
+                "chaincodeid": {
+                    "type": "string",
+                    "example": "test"
+                },
+                "chaincodeversion": {
+                    "type": "string",
+                    "example": "v1.0"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "chaincode.invokeChaincodeRequest": {
+            "type": "object",
+            "required": [
+                "args",
+                "chaincodeid",
+                "channelid",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "args": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "save",
+                        "a",
+                        "b"
+                    ]
+                },
+                "chaincodeid": {
+                    "type": "string",
+                    "example": "test"
+                },
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "chaincode.packageChaincodeRequest": {
+            "type": "object",
+            "required": [
+                "chaincodeid",
+                "chaincodesrcpath",
+                "chaincodetype",
+                "chaincodeversion"
+            ],
+            "properties": {
+                "chaincodeid": {
+                    "type": "string",
+                    "example": "test"
+                },
+                "chaincodesrcpath": {
+                    "type": "string",
+                    "example": "src/github.com/chaincode"
+                },
+                "chaincodetype": {
+                    "type": "string",
+                    "example": "GOLANG"
+                },
+                "chaincodeversion": {
+                    "type": "string",
+                    "example": "v1.0"
+                }
+            }
+        },
+        "chaincode.queryChaincodeRequest": {
+            "type": "object",
+            "required": [
+                "args",
+                "chaincodeid",
+                "channelid",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "args": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "query",
+                        "a"
+                    ]
+                },
+                "chaincodeid": {
+                    "type": "string",
+                    "example": "test"
+                },
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "chaincode.upgradeChaincodeRequest": {
+            "type": "object",
+            "required": [
+                "chaincodeid",
+                "chaincodeversion",
+                "channelid",
+                "orgmsps",
+                "orgnames",
+                "packageid",
+                "sequence"
+            ],
+            "properties": {
+                "chaincodeid": {
+                    "type": "string",
+                    "example": "test"
+                },
+                "chaincodepolicy": {
+                    "type": "string"
+                },
+                "chaincodeversion": {
+                    "type": "string",
+                    "example": "v1.0"
+                },
+                "channelid": {
+                    "type": "string",
+                    "example": "mychanel"
+                },
+                "isinit": {
+                    "type": "boolean"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                },
+                "packageid": {
+                    "type": "string"
+                },
+                "sequence": {
+                    "type": "integer",
+                    "example": 1
+                }
+            }
+        },
+        "channel.createChannelRequest": {
+            "type": "object",
+            "required": [
+                "orderernames",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orderernames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "orderer0",
+                        "orderer1",
+                        "orderer2"
+                    ]
+                },
+                "ordererorgname": {
+                    "type": "string",
+                    "example": "orderer"
+                },
+                "ordererusername": {
+                    "type": "string",
+                    "example": "Admin"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "channel.joinChannelRequest": {
+            "type": "object",
+            "required": [
+                "orderernames",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orderernames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "orderer0",
+                        "orderer1",
+                        "orderer2"
+                    ]
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "gintool.ApiResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "description": "状态码",
+                    "type": "integer"
+                },
+                "err_msg": {
+                    "description": "内部错误详情",
+                    "type": "string"
+                },
+                "message": {
+                    "description": "状态短语",
+                    "type": "string"
+                },
+                "result": {
+                    "description": "数据结果集",
+                    "type": "object"
+                }
+            }
+        },
+        "ledger.queryBlockByHashRequest": {
+            "type": "object",
+            "required": [
+                "channelid",
+                "hash",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "hash": {
+                    "type": "string",
+                    "example": "0xacedababacedababacedababacedababacedababacedababacedababacedabab"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "ledger.queryBlockByTxIdRequest": {
+            "type": "object",
+            "required": [
+                "channelid",
+                "orgmsps",
+                "orgnames",
+                "txid"
+            ],
+            "properties": {
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                },
+                "txid": {
+                    "type": "string",
+                    "example": "0xacedababacedababacedababacedababacedababacedababacedababacedabab"
+                }
+            }
+        },
+        "ledger.queryBlockNumRequest": {
+            "type": "object",
+            "required": [
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "ledger.queryBlockRequest": {
+            "type": "object",
+            "required": [
+                "channelid",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "blocknum": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "ledger.queryConfigRequest": {
+            "type": "object",
+            "required": [
+                "channelid",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "ledger.queryLedgerRequest": {
+            "type": "object",
+            "required": [
+                "channelid",
+                "orgmsps",
+                "orgnames"
+            ],
+            "properties": {
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                }
+            }
+        },
+        "ledger.queryTxRequest": {
+            "type": "object",
+            "required": [
+                "orgmsps",
+                "orgnames",
+                "txid"
+            ],
+            "properties": {
+                "channelid": {
+                    "type": "string",
+                    "example": "mychannel"
+                },
+                "orgmsps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "Org1MSP",
+                        "Org2MSP",
+                        "Org3MSP"
+                    ]
+                },
+                "orgnames": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": [
+                        "org1",
+                        "org2",
+                        "org3"
+                    ]
+                },
+                "txid": {
+                    "type": "string",
+                    "example": "0xacedababacedababacedababacedababacedababacedababacedababacedabab"
+                }
+            }
+        },
+        "log.setLogLevelRequest": {
+            "type": "object",
+            "required": [
+                "loglevel"
+            ],
+            "properties": {
+                "loglevel": {
+                    "type": "string",
+                    "example": "info"
+                }
+            }
+        }
+    }
+}

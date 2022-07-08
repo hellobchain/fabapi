@@ -1,0 +1,26 @@
+version: '2'
+
+networks:
+  fab:
+
+services:
+  fab-api:
+    container_name: fab-api
+    image: fab-api:v1.0
+    # restart: always # 当发生错误时自动重启
+    environment:
+      - FAB_SERVER_PORT=6922
+      - FAB_SERVER_ENVIRONMENT=debug
+      - FAB_SERVER_LOGLEVEL=debug
+      - FAB_OTHER_ISFILE=true
+      - FAB_OTHER_ISCONCURRENT=true
+      - FAB_OTHER_ISASY=true
+      - FAB_PPROF_ENABLE=true
+    volumes:
+      - ../config/network.yaml:/etc/fab/network.yaml
+      - ../config/fabconfig.yaml:/etc/fab/fabconfig.yaml
+    working_dir: /fab/fab-api
+    ports:
+      - 6922:6922
+    networks:
+      - fab

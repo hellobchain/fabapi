@@ -1,0 +1,13 @@
+Server:
+  Port: 6922    # 服务端口
+  Environment: debug  # 服务的环境   release debug test
+  LogLevel: debug    # 服务的日志级别
+  
+  
+Other:
+  IsFile: true  # 打包链码是否需要存在文件里
+  IsConcurrent: true # 链码交易以及账本查询是否并发 就是共享同一个client
+  IsAsy: true  # 是否并发
+  
+PprofConf:
+  Enable: true         # 是否开启pprof
