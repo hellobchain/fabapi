@@ -12,11 +12,11 @@ import (
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	"fabapi/core/common/json"
+	"github.com/wsw365904/fabapi/core/common/json"
 
-	internalfabsdk "fabapi/core/fabsdk"
-	"fabapi/core/fabsdk/models"
-	"fabapi/pkg/utils"
+	internalfabsdk "github.com/wsw365904/fabapi/core/fabsdk"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/ledger"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"

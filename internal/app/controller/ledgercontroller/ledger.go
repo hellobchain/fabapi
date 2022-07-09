@@ -12,12 +12,12 @@ import (
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	"fabapi/core/common/e"
-	"fabapi/core/common/gintool"
-	"fabapi/core/common/json"
-	"fabapi/core/fabsdk/models"
-	"fabapi/internal/app/service"
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/core/common/e"
+	"github.com/wsw365904/fabapi/core/common/gintool"
+	"github.com/wsw365904/fabapi/core/common/json"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	"github.com/wsw365904/fabapi/internal/app/service"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )

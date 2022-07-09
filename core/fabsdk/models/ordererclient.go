@@ -1,7 +1,7 @@
 package models
 
 import (
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/resmgmt"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/context"

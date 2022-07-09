@@ -8,7 +8,7 @@
 package models
 
 import (
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/wsw365904/wswlog/wlogging"
 )

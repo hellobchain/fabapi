@@ -2,13 +2,14 @@ package utils
 
 import (
 	"bytes"
-	"fabapi/core/common/e"
 	"fmt"
 	"os"
 	"os/signal"
 	"runtime/pprof"
 	"strings"
 	"syscall"
+
+	"github.com/wsw365904/fabapi/core/common/e"
 
 	"github.com/pkg/errors"
 )

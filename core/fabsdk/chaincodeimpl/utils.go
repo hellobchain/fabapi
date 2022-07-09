@@ -17,10 +17,10 @@ import (
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	"fabapi/core/common/json"
-	"fabapi/core/fabsdk/models"
-	internalutils "fabapi/core/fabsdk/utils"
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/core/common/json"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	internalutils "github.com/wsw365904/fabapi/core/fabsdk/utils"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/resmgmt"

@@ -12,9 +12,9 @@ import (
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	"fabapi/core/fabsdk/models"
-	internalutils "fabapi/core/fabsdk/utils"
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	internalutils "github.com/wsw365904/fabapi/core/fabsdk/utils"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/resmgmt"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/errors/retry"

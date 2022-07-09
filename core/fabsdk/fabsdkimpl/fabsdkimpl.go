@@ -8,12 +8,12 @@
 package fabsdkimpl
 
 import (
-	"fabapi/internal/pkg/config/fabconfig"
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/internal/pkg/config/fabconfig"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	internalfabsdk "fabapi/core/fabsdk"
+	internalfabsdk "github.com/wsw365904/fabapi/core/fabsdk"
 
 	"github.com/hyperledger/fabric-sdk-go/pkg/core/config"
 	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"

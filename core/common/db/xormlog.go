@@ -3,7 +3,7 @@ package db
 import (
 	"fmt"
 
-	"fabapi/pkg/flogging"
+	"github.com/wsw365904/wswlog/wlogging"
 
 	"github.com/go-xorm/core"
 )
@@ -12,7 +12,7 @@ import (
 type OrmLogger struct {
 	showSQL bool
 	level   core.LogLevel
-	logger  *flogging.FabricLogger
+	logger  *wlogging.WswLogger
 }
 
 // Error implement core.ILogger

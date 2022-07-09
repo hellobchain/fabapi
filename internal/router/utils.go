@@ -13,15 +13,15 @@ import (
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	"fabapi/core/common/gintool"
-	"fabapi/core/fabsdk/models"
-	_ "fabapi/docs"
-	"fabapi/internal/app/controller/allcontroller"
-	"fabapi/internal/app/controller/chaincodecontroller"
-	"fabapi/internal/app/controller/channelcontroller"
-	"fabapi/internal/app/controller/ledgercontroller"
-	"fabapi/internal/app/controller/logcontroller"
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/core/common/gintool"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	_ "github.com/wsw365904/fabapi/docs"
+	"github.com/wsw365904/fabapi/internal/app/controller/allcontroller"
+	"github.com/wsw365904/fabapi/internal/app/controller/chaincodecontroller"
+	"github.com/wsw365904/fabapi/internal/app/controller/channelcontroller"
+	"github.com/wsw365904/fabapi/internal/app/controller/ledgercontroller"
+	"github.com/wsw365904/fabapi/internal/app/controller/logcontroller"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/gin-contrib/pprof"
 

@@ -5,7 +5,7 @@ import (
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	"fabapi/pkg/uuid"
+	"github.com/wsw365904/fabapi/pkg/uuid"
 
 	"github.com/gin-gonic/gin"
 )

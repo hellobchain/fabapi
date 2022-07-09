@@ -8,8 +8,8 @@
 package router
 
 import (
-	"fabapi/core/fabsdk/models"
-	"fabapi/internal/app/controller/allcontroller"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	"github.com/wsw365904/fabapi/internal/app/controller/allcontroller"
 )
 
 /***************************************************************

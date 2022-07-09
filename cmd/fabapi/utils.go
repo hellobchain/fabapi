@@ -12,7 +12,7 @@ import (
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	"fabapi/internal/router"
+	"github.com/wsw365904/fabapi/internal/router"
 
 	"github.com/urfave/cli"
 )

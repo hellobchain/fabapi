@@ -1,4 +1,4 @@
-module fabapi
+module github.com/wsw365904/fabapi
 
 go 1.16
 

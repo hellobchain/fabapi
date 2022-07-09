@@ -3,7 +3,7 @@ package models
 import (
 	"fmt"
 
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/ledger"
 	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/context"

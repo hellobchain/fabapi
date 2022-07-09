@@ -8,9 +8,9 @@
 package channelserviceimpl
 
 import (
-	internalfabsdk "fabapi/core/fabsdk"
-	"fabapi/core/fabsdk/models"
-	"fabapi/internal/app/service"
+	internalfabsdk "github.com/wsw365904/fabapi/core/fabsdk"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	"github.com/wsw365904/fabapi/internal/app/service"
 
 	"github.com/wsw365904/wswlog/wlogging"
 )

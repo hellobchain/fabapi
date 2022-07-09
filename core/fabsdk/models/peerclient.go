@@ -1,7 +1,7 @@
 package models
 
 import (
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	mspcli "github.com/hyperledger/fabric-sdk-go/pkg/client/msp"
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/resmgmt"

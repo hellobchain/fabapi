@@ -13,11 +13,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"fabapi/core/fabsdk/models"
-	internalutils "fabapi/core/fabsdk/utils"
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	internalutils "github.com/wsw365904/fabapi/core/fabsdk/utils"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
-	internalfabsdk "fabapi/core/fabsdk"
+	internalfabsdk "github.com/wsw365904/fabapi/core/fabsdk"
 
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/hyperledger/fabric-sdk-go/pkg/client/channel"

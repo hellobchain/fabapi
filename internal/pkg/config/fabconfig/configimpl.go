@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"os"
 
-	"fabapi/core/common/json"
-	"fabapi/core/common/log"
-	"fabapi/core/fabsdk/models"
-	"fabapi/internal/pkg/config"
+	"github.com/wsw365904/fabapi/core/common/json"
+	"github.com/wsw365904/fabapi/core/common/log"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	"github.com/wsw365904/fabapi/internal/pkg/config"
 
 	"github.com/spf13/viper"
 )

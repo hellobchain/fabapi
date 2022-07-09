@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"fabapi/core/common/e"
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/core/common/e"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/go-xorm/xorm"
 )

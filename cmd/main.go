@@ -8,7 +8,7 @@
 package main
 
 import (
-	"fabapi/cmd/fabapi"
+	"github.com/wsw365904/fabapi/cmd/fabapi"
 	"github.com/wsw365904/wswlog/wlogging"
 )
 

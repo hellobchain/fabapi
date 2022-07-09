@@ -8,8 +8,8 @@
 package logserviceimpl
 
 import (
-	"fabapi/core/common/log"
-	"fabapi/internal/app/service"
+	"github.com/wsw365904/fabapi/core/common/log"
+	"github.com/wsw365904/fabapi/internal/app/service"
 
 	"github.com/wsw365904/wswlog/wlogging"
 )

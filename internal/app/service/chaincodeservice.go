@@ -7,7 +7,7 @@
  **************************************************************/
 package service
 
-import "fabapi/core/fabsdk/models"
+import "github.com/wsw365904/fabapi/core/fabsdk/models"
 
 type ChaincodeService interface {
 

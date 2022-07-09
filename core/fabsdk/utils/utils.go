@@ -12,8 +12,8 @@ import (
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	"fabapi/core/fabsdk/models"
-	"fabapi/pkg/utils"
+	"github.com/wsw365904/fabapi/core/fabsdk/models"
+	"github.com/wsw365904/fabapi/pkg/utils"
 
 	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"
 )

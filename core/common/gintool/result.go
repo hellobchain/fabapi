@@ -5,7 +5,7 @@ import (
 
 	"github.com/wsw365904/wswlog/wlogging"
 
-	"fabapi/core/common/e"
+	"github.com/wsw365904/fabapi/core/common/e"
 
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
