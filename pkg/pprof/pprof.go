@@ -2,6 +2,7 @@ package pprof
 
 import (
 	"fmt"
+	"github.com/wsw365904/wswlog/wlogging"
 	"net/http"
 
 	_ "net/http/pprof"

@@ -1,10 +1,4 @@
-/***************************************************************
- * @file       程序文件名称
- * @brief      程序文件的功能
- * @author     wsw
- * @version    v1
- * @date       2021.12.20
- **************************************************************/
+// Package channelcontroller /***************************************************************
 package channelcontroller
 
 import (
@@ -28,24 +22,14 @@ type ChannelController struct {
 	channelService service.ChannelService
 }
 
-/***************************************************************
- *  @brief     函数作用
- *  @param     参数
- *  @note      备注
- *  @Sample usage:     函数的使用方法
-**************************************************************/
+// NewChannelController /***************************************************************
 func NewChannelController(channelService service.ChannelService) *ChannelController {
 	return &ChannelController{
 		channelService: channelService,
 	}
 }
 
-/***************************************************************
- *  @brief     函数作用
- *  @param     参数
- *  @note      备注
- *  @Sample usage:     函数的使用方法
-**************************************************************/
+// Close /***************************************************************
 func (c *ChannelController) Close() {
 	logger.Debug("ChannelController enter close")
 	if c == nil {

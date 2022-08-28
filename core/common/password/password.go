@@ -2,6 +2,7 @@ package password
 
 import (
 	"github.com/alexandrevicenzi/unchained"
+	"github.com/wsw365904/wswlog/wlogging"
 )
 
 var logger = wlogging.MustGetLoggerWithoutName()

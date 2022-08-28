@@ -50,12 +50,7 @@ type ChaincodeOp struct {
 	isFile       bool
 }
 
-/***************************************************************
- *  @brief     函数作用
- *  @param     参数
- *  @note      备注
- *  @Sample usage:     函数的使用方法
-**************************************************************/
+// NewChaincodeOp /***************************************************************
 func NewChaincodeOp(other *models.Other, sdk *fabsdk.FabricSDK) internalfabsdk.Chaincode {
 	return &ChaincodeOp{
 		isAsy:        other.IsAsy,
@@ -67,7 +62,7 @@ func NewChaincodeOp(other *models.Other, sdk *fabsdk.FabricSDK) internalfabsdk.C
 
 // /////////////////////////////// 链码管理 开始///////////////////////////////////
 
-// 打包链码
+// PackageCC 打包链码
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数
@@ -104,7 +99,7 @@ func (c *ChaincodeOp) PackageCC(cCName, cCVersion, cCpath string, chaincodeType 
 	return desc.Label, ret, packageID, nil
 }
 
-// 安装链码
+// InstallCC 安装链码
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数
@@ -115,7 +110,7 @@ func (c *ChaincodeOp) InstallCC(ccName, ccVersion string, ret interface{}, orgsI
 	logger.Debug("InstallCC enter")
 	logger.Debug("hello 开始安装链码 waiting......")
 	label := ccName + "_" + ccVersion
-	ccPkg, isHaveTmpCcFile, ccPath, err := c.getPackageValue(ret)
+	ccPkg, _, _, err := c.getPackageValue(ret)
 	if err != nil {
 		return models.EmptyReturn, utils.ToErr(err, "getPackageValue")
 	}
@@ -128,14 +123,14 @@ func (c *ChaincodeOp) InstallCC(ccName, ccVersion string, ret interface{}, orgsI
 	if err != nil {
 		return models.EmptyReturn, utils.ToErr(err, "installCC")
 	}
-	if isHaveTmpCcFile { // 有文件，将文件删除
-		c.removeTmpFile(ccPath)
-	}
+	// if isHaveTmpCcFile { // 有文件，将文件删除
+	// c.removeTmpFile(ccPath)
+	// }
 	logger.Debug("hello 安装链码成功")
 	return packageID, nil
 }
 
-// 批准链码 "OutOf('1', 'AMSP.member', 'BMSP.member')"
+// ApproveCC 批准链码 "OutOf('1', 'AMSP.member', 'BMSP.member')"
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数
@@ -192,7 +187,7 @@ func (c *ChaincodeOp) ApproveCC(packageID string, ccName, ccVersion string, sequ
 	return nil
 }
 
-// 提交链码 "OutOf('1', 'AMSP.member', 'BMSP.member')"
+// CommitCC 提交链码 "OutOf('1', 'AMSP.member', 'BMSP.member')"
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数
@@ -240,7 +235,7 @@ func (c *ChaincodeOp) CommitCC(ccName, ccVersion string, sequence int64, chainco
 	return nil
 }
 
-// 升级链码
+// UpgradeCC 升级链码
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数
@@ -297,7 +292,7 @@ func (c *ChaincodeOp) UpgradeCC(packageID string, ccName, ccVersion string, sequ
 	return nil
 }
 
-// 初始化链码
+// InitCC 初始化链码
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数
@@ -326,7 +321,7 @@ func (c *ChaincodeOp) InitCC(ccName string, channelID string, args []string, org
 	return string(response.TransactionID), nil
 }
 
-// 调用链码
+// InvokeCC 调用链码
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数
@@ -358,7 +353,7 @@ func (c *ChaincodeOp) InvokeCC(ccName string, channelID string, args []string, o
 	return string(response.TransactionID), nil
 }
 
-// 查询链码
+// QueryCC 查询链码
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数

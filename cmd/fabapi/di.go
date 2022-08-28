@@ -130,12 +130,7 @@ func buildContainer() (*dig.Container, error) {
 	return container, nil
 }
 
-/***************************************************************
- *  @brief     函数作用
- *  @param     参数
- *  @note      备注
- *  @Sample usage:     函数的使用方法
-**************************************************************/
+// StartMain /***************************************************************
 func StartMain() {
 	logger.Debug("StartMain enter")
 	container, err := buildContainer() // 创建

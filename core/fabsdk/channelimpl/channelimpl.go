@@ -1,10 +1,4 @@
-/***************************************************************
- * @file       程序文件名称
- * @brief      程序文件的功能
- * @author     wsw
- * @version    v1
- * @date       2021.12.20
- **************************************************************/
+// Package channelimpl /***************************************************************
 package channelimpl
 
 import (
@@ -32,12 +26,7 @@ type ChannelOp struct {
 	sdk   *fabsdk.FabricSDK
 }
 
-/***************************************************************
- *  @brief     函数作用
- *  @param     参数
- *  @note      备注
- *  @Sample usage:     函数的使用方法
-**************************************************************/
+// NewChannelOp /***************************************************************
 func NewChannelOp(other *models.Other, sdk *fabsdk.FabricSDK) internalfabsdk.Channel {
 	return &ChannelOp{
 		isAsy: other.IsAsy,
@@ -47,7 +36,7 @@ func NewChannelOp(other *models.Other, sdk *fabsdk.FabricSDK) internalfabsdk.Cha
 
 // /////////////////////////////// 通道管理 开始///////////////////////////////////
 
-// 加入通道
+// JoinChannel 加入通道
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数
@@ -68,7 +57,7 @@ func (c *ChannelOp) JoinChannel(orgsInfos []*models.PeerOrgInfo, channelInfo *mo
 	return nil
 }
 
-// 创建通道
+// CreateChannel 创建通道
 /***************************************************************
  *  @brief     函数作用
  *  @param     参数
